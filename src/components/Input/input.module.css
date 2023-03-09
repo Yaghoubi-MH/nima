@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.default_container{
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.input{
+    outline: 0;
+    border: 0;
+}
+.input_icon{
+    height: 15px;
+}

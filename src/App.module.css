@@ -1,0 +1,10 @@
+.App {
+  padding: 20px;
+}
+ .input_container {
+     width: 200px;
+     padding: 10px;
+     border: 1px solid #000;
+     border-radius: 5px;
+     margin: 5px;
+ }

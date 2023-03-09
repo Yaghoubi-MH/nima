@@ -1,0 +1,26 @@
+.container{
+    width: 50%;
+    border-collapse: collapse;
+    /*border-spacing: 0 30px;*/
+    margin: 50px;
+    padding: 20px;
+}
+.table_header{
+    border: 1px solid #555;
+    text-align: left;
+    padding: 5px 10px;
+}
+.table_body{
+    margin-top: 30px;
+    border-spacing: 0 0;
+}
+.th::before{
+    display: table-row;
+    height: 30px;
+    content: '';
+}
+.tr{
+    border: 1px solid #555;
+    padding: 5px 10px;
+
+}
