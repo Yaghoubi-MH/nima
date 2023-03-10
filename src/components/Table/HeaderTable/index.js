@@ -6,7 +6,7 @@ const HeaderTable = ({data, style}) => {
         <thead>
             <tr>
                 { data.map((i, index) => (
-                    <th rowSpan="10" className={style.table_header} key={index}>
+                    <th rowSpan="10" className={style.header_cell_table} key={index}>
                         {i}
                     </th>
                 )) }

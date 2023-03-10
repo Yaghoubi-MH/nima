@@ -5,22 +5,17 @@
     margin: 50px;
     padding: 20px;
 }
-.table_header{
+.header_cell_table{
     border: 1px solid #555;
     text-align: left;
     padding: 5px 10px;
 }
-.table_body{
-    margin-top: 30px;
-    border-spacing: 0 0;
-}
-.th::before{
+.add_row_after_header::before{
     display: table-row;
     height: 30px;
     content: '';
 }
-.tr{
+.body_cell_table{
     border: 1px solid #555;
     padding: 5px 10px;
-
 }
