@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./SimpleBullet.module.css";
 
-const SimpleBullet = ({bullets, calculateLeftHandler, height}) => {
+const SimpleBullet = ({list, calculateLeftHandler, height}) => {
 
     return(
         <>
-            {bullets.map((i,index) => (
+            {list.map((i,index) => (
                 <span key={index}
                       style={{
                           left: calculateLeftHandler(i.score),

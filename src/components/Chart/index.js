@@ -4,13 +4,8 @@ import styles from './Chart.module.css'
 import SimpleBullet from "./SimpleBullet";
 import AdvanceBullet from "./AdvanceBullet";
 
-const BulletChart = ({style , width, list, componentSimpleBullet}) => {
+const BulletChart = ({style , width, list, componentSimpleBullet, bulletList}) => {
     console.log(componentSimpleBullet)
-    const bullets = [
-        {score: 580, color: '#472e8b'},
-        {score: 610, color: '#920e53'},
-        {score: 940, color: '#0fc4bc'},
-    ]
 
     const calculateLeftHandler = (value) => {
          return (width / (list[list.length - 1] - list[0])) * (value - list[0])
@@ -20,8 +15,8 @@ const BulletChart = ({style , width, list, componentSimpleBullet}) => {
         <div className={style.chart_container}>
             <div className={style.gage_container}>
                 { componentSimpleBullet ?
-                    <SimpleBullet bullets={bullets} calculateLeftHandler={calculateLeftHandler} height={10} />
-                    : <AdvanceBullet style={style} calculateLeftHandler={calculateLeftHandler} /> }
+                    <SimpleBullet list={bulletList} calculateLeftHandler={calculateLeftHandler} height={10} />
+                    : <AdvanceBullet list={bulletList} style={style} calculateLeftHandler={calculateLeftHandler} /> }
             </div>
             <div className={styles.num_container}>
                 {

@@ -2,12 +2,8 @@ import React from "react";
 
 import styles from "./AdvanceBullet.module.css"
 
-const AdvanceBullet = ({style, calculateLeftHandler}) => {
+const AdvanceBullet = ({style, calculateLeftHandler, list}) => {
 
-    const list = [
-        {score: 550, color: '#d53737', text: 'red'},
-        {score: 608, color: '#3764d5', text: 'blue'},
-        {score: 750, color: '#209e67', text: 'green'}]
 
     return(
         <>
