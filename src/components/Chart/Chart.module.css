@@ -1,0 +1,10 @@
+.num_container{
+    display: flex;
+    height: 50px;
+    position: relative;
+}
+.number{
+    position: absolute;
+    display: inline-block;
+    transform: translateX(-50%);
+}

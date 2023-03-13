@@ -1,0 +1,5 @@
+.Advance_bullet_container{
+    display: block;
+    position: absolute;
+    transform: translateX(-50%);
+}

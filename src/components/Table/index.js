@@ -7,7 +7,7 @@ const Table = ({tableData, style}) => {
     const keys = Object.keys(tableData[0])
 
     return(
-        <table className={style.container}>
+        <table className={style.table_container}>
             <HeaderTable style={style} data={keys} />
             <BodyTable style={style} data={tableData} />
         </table>
