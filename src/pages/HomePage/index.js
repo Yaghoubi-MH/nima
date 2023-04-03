@@ -1,10 +1,12 @@
 import React from "react";
-import Input from "../../components/Input";
 import {Link} from "react-router-dom";
-import Table from "../../components/Table";
 import styles from "./HomePage.module.css"
-import BulletChart from "../../components/Chart";
-import SimpleBullet from "../../components/Chart/SimpleBullet";
+import {
+    Input,
+    Table,
+    BulletChart,
+    DropDown,
+} from "../../components";
 
 const HomePage = ({style}) => {
 
@@ -18,8 +20,17 @@ const HomePage = ({style}) => {
     const bulletList = [
         {score: 550, color: '#d53737', text: 'red'},
         {score: 608, color: '#3764d5', text: 'blue'},
-        {score: 750, color: '#209e67', text: 'green'}]
+        {score: 750, color: '#209e67', text: 'green'}
+    ]
+    const options = [
+        { value: 'option1', label: 'Option 1' },
+        { value: 'option2', label: 'Option 2' },
+        { value: 'option3', label: 'Option 3' },
+    ];
 
+    function handleSelect(option) {
+        console.log('Selected option:', option);
+    }
     return(
         <>
             <Input style={style} />
@@ -34,6 +45,7 @@ const HomePage = ({style}) => {
                 bulletList={bulletList}
                 bulletHeight={20}
                 componentSimpleBullet={true}/>
+            <DropDown options={options} onSelect={handleSelect} withCheckBox={true}/>
         </>
     )
 }

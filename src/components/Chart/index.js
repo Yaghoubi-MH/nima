@@ -5,7 +5,6 @@ import SimpleBullet from "./SimpleBullet";
 import AdvanceBullet from "./AdvanceBullet";
 
 const BulletChart = ({style , width, list, componentSimpleBullet, bulletList}) => {
-    console.log(componentSimpleBullet)
 
     const calculateLeftHandler = (value) => {
          return (width / (list[list.length - 1] - list[0])) * (value - list[0])
