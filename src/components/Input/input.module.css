@@ -48,3 +48,6 @@
     transform: translateY(-18px);
     opacity: 1;
 }
+.non_empty{
+    border: 1px solid #AAA;
+}
