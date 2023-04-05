@@ -33,7 +33,7 @@ const HomePage = ({style}) => {
     }
     return(
         <>
-            <Input style={style} />
+            <Input icon={false} disabled={false} style={style} />
             <h2>
                 <Link to='/tp'>testing page</Link>
             </h2>
